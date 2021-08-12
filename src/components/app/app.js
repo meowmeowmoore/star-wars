@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import Header from '../header/';
 import RandomPlanet from '../random-planet';
 import ItemList from '../item-list';

@@ -1,4 +1,4 @@
-class SwapiService {
+export default class SwapiService {
 
   _apiBase = 'https://swapi.dev/api';
 
@@ -24,15 +24,3 @@ class SwapiService {
     return this.getResource(`/starships/${id}`);
   }
 }
-
-const swapi = new SwapiService();
-
-swapi.getStarship(3).then((p) => {
-  console.log(p.name)
-})
-
-// swapi.getAllPeople().then((people) => {
-//   people.forEach((p) => {
-//     console.log(p.name)
-//   })
-// })
