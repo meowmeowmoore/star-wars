@@ -1,5 +1,7 @@
+
 .item-list {
     margin: 1rem 0;
+    max-width: 1200px;
 }
 
 .item-list .list-group-item {

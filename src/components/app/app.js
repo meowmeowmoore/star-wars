@@ -12,8 +12,12 @@ const App = () => {
       <Header />
       <div className='col-md-6'>
         <RandomPlanet />
-        <ItemList />
-        <PersonDetails />
+        <div className='container'>
+          <div className='list-container'>
+            <ItemList />
+          </div>
+          <PersonDetails />
+        </div>
       </div>
 
     </div>

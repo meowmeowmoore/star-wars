@@ -1,8 +1,35 @@
+
+@media (max-width: 2400px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container .list-container {
+        width: 520px;
+    }
+    .container .person-details {
+        width: 520px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
 .view {
-    width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .col-md-6 {
     width: 90%;
 }
+

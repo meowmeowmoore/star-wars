@@ -16,8 +16,16 @@ export default class SwapiService {
     return res.results;
   }
 
-  getPlanet(id) {
-    return this.getResource(`/planets/${id}`);
+  async getPlanet(id) {
+    const planet = await this.getResource(`/planets/${id}`)
+      .then((planetInfo) => planetInfo);
+    return {
+      id,
+      name: planet.name,
+      rotationPeriod: planet.rotation_period,
+      population: planet.population,
+      diameter: planet.diameter,
+    }
   }
 
   getStarship(id) {
